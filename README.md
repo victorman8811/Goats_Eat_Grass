@@ -14,3 +14,7 @@ The behavior of grass is simpler. Grass never moves and doesn’t eat. Grass sta
 During each pass of the simulation, the program scan the world row by row from left to right and call upon each creature found to act. You have to make sure that each creature only acts once in each pass even if it has moved. For example, a goat may move to a new cell that will be scanned in a later time. In this case, you must have a way of jumping over that goat. In addition, baby goats and baby grass do not act during their first day of existence; they are merely by-products of existing creatures.
 
 A sample interface is shown as below. I suggest you to play with the sample executable first to get a feel of what it does. The user can specify three optional parameters from the command line. The first parameter is the number of passes to run. The second parameter is the number of passes between every display of the world. The third parameter is the seed for the random number generator. For example, AlifeTest_sun4 1000 100 1234 means that the simulation will run for 1000 passes and display the world once every 100 passes with the seed of 1234 for the random number generator. If the user specifies zero passes, or a negative number, the program defaults to a single pass.
+
+
+![image](https://user-images.githubusercontent.com/73115224/156191314-16ef57db-5059-455f-b623-ed125c4e914f.png)
+
